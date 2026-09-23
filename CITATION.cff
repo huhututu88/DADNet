@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the article and the software below."
+title: "DADNet: Dual-Attention U-Net for Industrial Surface Defect Segmentation"
+type: software
+authors:
+  # TODO: replace with the real author list before publishing.
+  - family-names: "TODO"
+    given-names: "TODO"
+    email: "TODO@example.com"
+url: "https://github.com/<user>/DADNET"
+license: Apache-2.0
+# TODO: set the release date, e.g. 2026-01-01
+# date-released: 2026-01-01
+
+# TODO: uncomment and fill in once the paper is public.
+# preferred-citation:
+#   type: article
+#   title: "DADNet: Dual-Attention U-Net for Industrial Surface Defect Segmentation"
+#   authors:
+#     - family-names: "TODO"
+#       given-names: "TODO"
+#   journal: "TODO"
+#   year: 2026
+#   doi: "TODO"
+
+references:
+  - type: software
+    title: "OpenMMLab Semantic Segmentation Toolbox and Benchmark"
+    authors:
+      - name: "MMSegmentation Contributors"
+    url: "https://github.com/open-mmlab/mmsegmentation"
+    license: Apache-2.0
+    notes: "DADNet is a fork of MMSegmentation v1.2.2."

@@ -1,0 +1,49 @@
+DADNet
+Copyright (c) DADNet Authors.
+
+--------------------------------------------------------------------------------
+This product is built on MMSegmentation and includes material from the
+following projects:
+
+  MMSegmentation
+  Copyright (c) OpenMMLab. All rights reserved.
+  Licensed under the Apache License, Version 2.0.
+  Source: https://github.com/open-mmlab/mmsegmentation
+  Version: 1.2.2
+
+  MMEngine
+  Copyright (c) OpenMMLab. All rights reserved.
+  Licensed under the Apache License, Version 2.0.
+  Source: https://github.com/open-mmlab/mmengine
+
+  MMCV
+  Copyright (c) OpenMMLab. All rights reserved.
+  Licensed under the Apache License, Version 2.0.
+  Source: https://github.com/open-mmlab/mmcv
+
+--------------------------------------------------------------------------------
+Modifications to MMSegmentation
+--------------------------------------------------------------------------------
+DADNet is a fork of MMSegmentation 1.2.2.  The following files are new or have
+been modified relative to the upstream release:
+
+  Modified:
+    mmseg/datasets/basesegdataset.py
+        - BaseSegDataset.load_data_list() now reads a JSON-Lines split file
+          whose entries may be relative to data_root.
+
+  Added:
+    mmseg/models/backbones/unet_improve.py     DADNet backbone (DFWE + MDCF)
+    mmseg/models/utils/wavelet.py              wavelet transform helpers
+    mmseg/models/utils/plug.py                 attention blocks
+    mmseg/datasets/SD900Dataset.py             NEU-Seg dataset
+    configs/dadnet/                            DADNet configs
+    tools/prepare_dataset.py                   dataset preparation
+
+  Removed (upstream modules unrelated to DADNet):
+    several backbone / decode-head modules that were specific to other
+    projects, together with their registry entries in the corresponding
+    __init__.py files.
+
+Code that remains unmodified from MMSegmentation retains its original
+"Copyright (c) OpenMMLab. All rights reserved." headers.

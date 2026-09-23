@@ -1,0 +1,34 @@
+# DADNet runtime dependencies.
+#
+# The mmcv / mmengine pins below are the ones required by MMSegmentation 1.2.2,
+# which DADNet is built on.  Install the matching PyTorch build for your CUDA
+# version first -- see docs/install.md.
+
+# --- deep learning framework -------------------------------------------------
+torch>=2.0.0
+torchvision>=0.15.0
+
+# --- MMSegmentation stack ----------------------------------------------------
+mmcv>=2.0.0rc4,<2.2.0
+mmengine>=0.5.0,<1.0.0
+
+# --- scientific stack --------------------------------------------------------
+numpy
+scipy
+matplotlib
+packaging
+prettytable
+opencv-python
+
+# --- DADNet-specific ---------------------------------------------------------
+# PyWavelets provides the `pywt` module used by mmseg/models/utils/wavelet.py,
+# which backs the wavelet feature split in the backbone.  It is NOT part of the
+# upstream MMSegmentation requirements.
+PyWavelets>=1.3.0
+# `einops` is imported by mmseg/models/backbones/unet_improve.py.
+einops>=0.6.0
+
+# --- optional -----------------------------------------------------------------
+# tensorboard          # enables TensorboardVisBackend in the visualizer (README 6.1)
+# seaborn              # required by tools/analysis_tools/analyze_logs.py (README 6.2)
+# timm>=0.9.0          # only needed if you use the TIMMBackbone
