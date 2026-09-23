@@ -2,8 +2,7 @@
 
 **DADNet: A Dual-branch Attention Differential Network for Automated Industrial Surface Defect Detection**
 
-基于 [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) v1.2.2 实现，在 NEU-Seg 热轧带钢缺陷数据集上验证。
-
+基于 [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) v1.2.2 实现
 ## 目录
 
 - [1. 环境安装](#1-环境安装)
