@@ -2,6 +2,8 @@
 
 **DADNet: A Dual-branch Attention Differential Network for Automated Industrial Surface Defect Detection**
 
+Our paper has been accepted by IEEE Transactions on Circuits and Systems for Video Technology (TCSVT).
+
 基于 [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) v1.2.2 实现
 ## 目录
 
