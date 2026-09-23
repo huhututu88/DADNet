@@ -9,11 +9,8 @@
 - [2. 数据集准备](#2-数据集准备)
 - [3. 训练](#3-训练)
 - [4. 测试与评估](#4-测试与评估)
-- [5. 消融实验](#5-消融实验)
-- [6. 可视化](#6-可视化)
-- [7. 常见问题](#7-常见问题)
-- [8. 引用](#8-引用)
-- [9. 致谢与许可](#9-致谢与许可)
+- [5. 引用](#5-引用)
+- [6. 致谢与许可](#6-致谢与许可)
 
 ---
 
@@ -146,7 +143,7 @@ python tools/test.py configs/dadnet/dadnet_unet32_neu_seg.py \
 
 ---
 
-## 9. 致谢与许可
+## 6. 致谢与许可
 
 本仓库是 [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) v1.2.2 的
 衍生作品，遵循 **Apache License 2.0**，详见 [LICENSE](LICENSE)。
